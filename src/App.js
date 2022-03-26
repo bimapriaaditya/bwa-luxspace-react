@@ -1,19 +1,15 @@
 import logo from './logo.svg';
-import './App.css';
-// import tailwind
+import './assets/css/app.css';
 import './input.css';
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import HomePage from './pages/HomePage'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p className="text-red-200">Lorem Ipsum</p>
-      </header>
-    </div>
+    <Router path="/">
+      <HomePage />
+    </Router>
   );
 }
 
