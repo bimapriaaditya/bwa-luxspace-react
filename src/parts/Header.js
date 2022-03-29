@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
-    <header className="absolute w-full z-50 px-4">
+    <header className="absolute top-0 left-0 w-full z-50 px-4">
       <div className="container mx-auto py-5">
         <div className="flex flex-stretch items-center">
           <div className="w-56 items-center flex">
             <img
-              src="assets/images/content/logo.png"
+              src="/assets/images/content/logo.png"
               alt="Luxspace | Fulfill your house with beautiful furniture"
             />
           </div>

@@ -5,11 +5,17 @@ import './input.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
+import DetailPage from './pages/DetailPage'
 function App() {
   return (
-    <Router path="/">
-      <HomePage />
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/detail/:idc" element={<DetailPage />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
