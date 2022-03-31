@@ -9,7 +9,7 @@ export default function Breadcrumb({ list }) {
         <ul className="breadcrumb">
           {
             list?.map((item, index) => {
-              const arias = index === list?.length ? {"aria-label": "current-page"} : {}
+              const arias = index === list?.length ? "aria-label='current-page'" : ""
               return (
                 <li key={item.link}>
                   <Link to={item.link} {...arias}>
