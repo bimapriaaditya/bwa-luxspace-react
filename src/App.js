@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import DetailPage from './pages/DetailPage'
 import Cart from './pages/Cart'
+import SuccessPage from './pages/SuccessPage'
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/detail/:idc" element={<DetailPage />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/success" element={<SuccessPage />} />
         </Routes>
       </Router>
     </>
