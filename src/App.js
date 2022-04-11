@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage'
 import DetailPage from './pages/DetailPage'
 import Cart from './pages/Cart'
 import SuccessPage from './pages/SuccessPage'
+import ErrorPage from './pages/ErrorPage'
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/detail/:idc" element={<DetailPage />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/success" element={<SuccessPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
     </>
